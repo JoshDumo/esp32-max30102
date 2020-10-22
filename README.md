@@ -182,7 +182,7 @@ float ratio_rms = log( sqrt( this->red_ac_sq_sum /
 ### Results
 
 A typical output from the simple example is shown, indicating the Heart Rate and oxygen saturation (SpO2)
-[Terminal](images/max30102Terminal.png)
+![Terminal](images/max30102Terminal.png)
 
 ### References
 
