@@ -103,7 +103,7 @@ The MSB bits B6 and B7 of the register are set by the Initializing function.
 ### Reading a Register
 We will use the FIFO register for reading. This register contains the sensor data measured from the photodiode.
 
-[FIFO](images/max30102Fifo)
+![FIFO](images/max30102Fifo)
 
 The FIFO register holds the data alternately between data read using the Red LED and the InfreRed LED, each taking 3 three bytes of data. So at each pass we read six bytes from the FIFO into a buffer, then split the data accordingly. 
 ``` c
@@ -161,9 +161,9 @@ void max30102_lpb_filter( max30102_config_t* this, float x )
 ```
 #### SpO2 
 
-This is implemented in the ``` c max30102_update ``` function. The basic equations are discussed in detail in the ![MAX30102 Application Node](https://pdfserv.maximintegrated.com/en/an/AN6409.pdf).
+This is implemented in the ``` c max30102_update ``` function. The basic equations are discussed in detail in the [MAX30102 Application Node](https://pdfserv.maximintegrated.com/en/an/AN6409.pdf).
 
-[SpO2](images/max30102SpO2.png)
+![SpO2](images/max30102SpO2.png)
 
 ``` c
 float ratio_rms = log( sqrt( this->red_ac_sq_sum /
