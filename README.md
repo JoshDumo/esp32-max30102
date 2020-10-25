@@ -103,7 +103,7 @@ The MSB bits B6 and B7 of the register are set by the Initializing function.
 ### Reading a Register
 We will use the FIFO register for reading. This register contains the sensor data measured from the photodiode.
 
-![FIFO](images/max30102Fifo)
+![FIFO](images/max30102Fifo.png)
 
 The FIFO register holds the data alternately between data read using the Red LED and the InfreRed LED, each taking 3 three bytes of data. So at each pass we read six bytes from the FIFO into a buffer, then split the data accordingly. 
 ``` c
