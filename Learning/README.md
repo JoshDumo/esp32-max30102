@@ -18,6 +18,22 @@ The required software packages are downloaded and stored in Projects/Storage.
 
 ## Loading up a Getting Started
 
+When the device is connected it should be visible under Device Manager->Ports as SiliconLabs CP210x
+
+Build the project
+``` sh
+cd \hello_world
+idf.py set-target esp32
+idf.py menuconfig
+
+idf.py build
+
+idf.py -p COM5 flash
+
+idf.py -p COM5 monitor
+```
+Remember to press the button on the right to reset and trigger the flashing.
+
 ## Loading up a C++ Getting Started
 
 
