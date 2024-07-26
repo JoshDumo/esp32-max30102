@@ -20,7 +20,7 @@ The required software packages are downloaded and stored in Projects/Storage.
 Clone the esp32 repository to some folder
 https://github.com/espressif/esp-idf.git
 
-The follow the instructions here 
+Follow the instructions here 
 https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/windows-setup.html#get-started-windows-first-steps
 
 When the device is connected it should be visible under Device Manager->Ports as SiliconLabs CP210x
@@ -40,6 +40,14 @@ idf.py -p COM5 monitor
 Remember to press the button on the right to reset and trigger the flashing.
 
 ## Loading up a C++ Getting Started
+Follow the instructions here 
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/cplusplus.html
+
+Clone esp-idf-cxx 
+https://github.com/espressif/esp-idf-cxx.git
+
+ Then go to your project directory, use `idf.py add-dependency espressif/esp-idf-cxx^1.0.0-beta ` (should only be done once) and you should be able to use CPP components.
+
 
 
 
