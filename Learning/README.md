@@ -46,6 +46,8 @@ https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/cplusplus
 Clone esp-idf-cxx 
 https://github.com/espressif/esp-idf-cxx.git
 
+ Then go to your project directory, use `idf.py add-dependency espressif/esp-idf-cxx^1.0.0-beta ` (should only be done once) and you should be able to use CPP components.
+
 
 
 
